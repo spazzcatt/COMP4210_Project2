@@ -6,8 +6,8 @@ trait IsNumbered{
   val cardNumberString = standardCardNumbers(numberOfCard)
 }
 
-trait HasSuit{
-  val suits = Array("HEARTS", "DIAMONDS", "CLUBS", "SPADES")
+abstract trait HasSuit{
+  val suits : Array[String]
   val currentSuit : Int
   val suitString = suits(currentSuit)
 }
